@@ -1,0 +1,222 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: bodyContent;
+  src: url("ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: headerContent;
+  src: url("Ubuntu-Regular.ttf");
+}
+body {
+  background: #fff;
+  color: #59595b;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.container {
+  width: 100%;
+}
+.column {
+  content: '';
+  display: table;
+  clear: both;
+  display: inline-block;
+}
+.column.fat {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  width: 75%;
+}
+.column.narrow {
+  position: absolute;
+  width: 200px;
+  top: 0px;
+}
+.row {
+  float: top;
+  display: inline-block;
+  border: 0px solid;
+  border-color: #bdd530;
+}
+.row.short {
+  height: 400px;
+  width: 100%;
+  padding: 1em;
+}
+.row.header {
+  min-height: 127px;
+  height: auto;
+  width: 100%;
+  display: table;
+  clear: both;
+}
+.row.tall {
+  height: auto;
+}
+.row.regular {
+  height: 300px;
+}
+.centered {
+  display: block;
+  margin-left: 5%;
+}
+.edge {
+  background-color: #9d9d9d;
+  width: 0.33em;
+  position: absolute;
+  height: 100%;
+  left: 200px;
+}
+.horizontal {
+  background-color: #9d9d9d;
+  float: top;
+  width: auto;
+  height: 0.33em;
+}
+.indent {
+  margin-left: 0em;
+}
+.spacer {
+  height: 0em;
+}
+.break {
+  height: 1em;
+}
+.point {
+  transition: all 0.25s;
+  font-family: bodyContent;
+  font-size: 2em;
+  color: #59595b;
+  line-height: 120%;
+}
+.point.hilight {
+  font-family: bodyContent;
+  font-size: 1em;
+  color: #bdd530;
+  line-height: 120%;
+}
+.point.header {
+  font-family: headerContent;
+  font-size: 2em;
+  color: #fff;
+  line-height: 120%;
+}
+.point.header:hover {
+  font-family: headerContent;
+  font-size: 2em;
+  color: #59595b;
+  line-height: 120%;
+}
+.hours {
+  font-family: bodyContent;
+  font-size: 1.25em;
+  color: #000;
+  line-height: 120%;
+}
+.caption {
+  font-family: headerContent;
+  font-size: 2em;
+  color: #bdd530;
+  line-height: 120%;
+}
+.caption:hover {
+  font-family: headerContent;
+  font-size: 2em;
+  color: LMWhite;
+  line-height: 120%;
+}
+.events {
+  font-family: headerContent;
+  font-size: 2em;
+  color: #59595b;
+  line-height: 120%;
+}
+.about {
+  font-family: headerContent;
+  font-size: 2em;
+  color: #bdd530;
+  line-height: 120%;
+}
+.input {
+  transition: all 0.5s;
+  height: 2em;
+  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 0em;
+  width: 185px;
+  font-family: bodyContent;
+  font-size: 1em;
+  color: #9d9d9d;
+  line-height: 120%;
+  background: #404040;
+  border: none;
+  outline: none;
+}
+.input.special {
+  background: #403a20;
+}
+.input.verySpecial {
+  background: #302a14;
+}
+.input.quarter {
+  width: 44px;
+}
+.input.half {
+  width: 88px;
+}
+.input.threeQuarters {
+  width: 137px;
+}
+.input.oneAndHalf {
+  width: 282px;
+}
+.input.double {
+  width: 379px;
+}
+.input.problem {
+  background: #f23d21;
+  color: #000;
+}
+.input.success {
+  background: #0aca1a;
+  color: #000;
+}
+.input.hidden {
+  padding: 0em;
+  margin-bottom: 0em;
+  color: #000;
+  background: #000;
+}
+.submit {
+  transition: all 0.25s;
+  width: 185px;
+  padding-left: 0em;
+  padding-right: 0em;
+  font-family: bodyContent;
+  font-size: 1em;
+  color: #000;
+  line-height: 120%;
+  background: #c8c4bc;
+  text-decoration: none;
+}
+.submit.quarter {
+  width: 38px;
+}
+.submit.half {
+  width: 88px;
+}
+.submit:hover {
+  color: #000;
+  background: #ccc4b8;
+}
