@@ -19,9 +19,6 @@ LMDarkGray  = #59595b
 LMBlack     = #000000
 
 specifyFont(inputColor, inputFont, inputSize)
-  // font-smooth never
-  // webkit-font-smoothing none
-  // -webkit-font-smoothing none
   font-family inputFont
   font-size inputSize
   color inputColor
@@ -32,6 +29,7 @@ inputBasics()
   outline none
   
 body
+  transition all 0.25s
   background LMwhite
   color LMDarkGray
 
@@ -72,8 +70,7 @@ body
     width 100%
     padding 1em
   &.header
-    
-    min-height 127px
+    min-height 64px
     height auto
     width 100%
     display table
@@ -87,7 +84,6 @@ body
 .centered
   display block
   margin-left 5%
-  //margin-right auto
 
 .edge
   background-color LMLightGray
@@ -117,23 +113,33 @@ body
   &.hilight
     specifyFont(LMHiLight, bodyContent, 1em)
   &.header
-    specifyFont(LMwhite, headerContent, 2em)
+    specifyFont(LMwhite, headerContent, 1.5em)
     &:hover
-      specifyFont(LMDarkGray, headerContent, 2em)
+      specifyFont(LMDarkGray, headerContent, 1.5em)
+      
+.toolCategory
+  transition all 0.25s
+  specifyFont(LMHiLight, bodyContent, 1.5em)
+  
+.tool
+  transition all 0.25s
+  specifyFont(LMDarkGray, bodyContent, 1.5em)
 
 .hours
   specifyFont(LMBlack, bodyContent, 1.25em)
   
 .caption
-  specifyFont(LMHiLight, headerContent, 2em)
-  &:hover
-    specifyFont(LMWhite, headerContent, 2em)
-    
+  transition all 0.25s
+  specifyFont(LMBlack, headerContent, 1.25em)
+
+.captionBox
+  transition all 0.5s  
+  
 .events
   specifyFont(LMDarkGray, headerContent, 2em)
   
 .about
-  specifyFont(LMHiLight, headerContent, 2em)
+  specifyFont(LMBlack, headerContent, 2em)
 
 .input
   transition all 0.5s

@@ -7,172 +7,97 @@ $      = require 'jquery'
 {a, p, div, input, img, span, iframe} = React.DOM
 
 
+headerItem = (name, scrollPosition) ->
+
+  div
+    style:  
+      display:      'inline-block'
+      marginLeft:   '3em'
+      marginBottom: '1em'
+
+    p
+      className: 'point header'
+      onClick: -> window.scrollTo 0, scrollPosition
+      style:
+        display:        'table'
+        position:       'relative'
+        verticalAlign:  'top'
+        marginTop:      '0.5em'
+
+      '\u25be ' + name
+
+
+subHeaderItem = (content) ->
+
+  p
+    className: 'hours'
+    style:
+      marginLeft: '2em'
+      display:    'inline-block'
+    
+    content
+
+
 Header = React.createClass
 
 
   render: ->
     div
       style:
-        'background-color': '#000000'
-        position: 'fixed'
-        width: '100%'
+        backgroundColor: '#000000'
+        position:        'fixed'
+        width:           '100%'
+        opacity:         '0.75'
 
       div
         className: 'row header'
 
         div
           style:
-            display: 'table'
-            'vertical-align': 'top'
+            display:       'table'
+            verticalAlign: 'top'
 
           img
             src: 'LMLabs1.png'
             style:
-              height: '127px'
-              width: 'auto'
-              'margin-left': '4em'
-          div
-            style:
-              display: 'inline-block'
-              'vertical-align': 'top'
-              'margin-left': '4em'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-
-              onClick: -> window.scrollTo 0, 0
-
-              '\u25BE Latest'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-
-              onClick: -> window.scrollTo 0, 800
-
-              '\u25BE Events'
-
-          div
-            style:
-              display: 'inline-block'
-              'vertical-align': 'top'
-              'margin-left': '4em'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-
-              onClick: -> window.scrollTo 0, 1500
-
-              '\u25BE Project Board'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-
-              onClick: -> window.scrollTo 0, 2200
-
-              '\u25BE About'
-
-          div
-            style:
-              display: 'inline-block'
-              'vertical-align': 'top'
-              'margin-left': '4em'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-
-              onClick: -> window.scrollTo 0, 3200
-
-              '\u25BE Location'
-
-            p
-              className: 'point header'
-              style:
-                display: 'table'
-                position: 'relative'
-                'vertical-align':'top'
-                'margin-top': '0.5em'
-              '\u25BE Tools'
+              height:     '64px'
+              width:      'auto'
+              marginLeft: '4em'
 
 
-          div
-            style:
-              display: 'inline-block'
-              'vertical-align': 'top'
-              'margin-left': '4em'
+          headerItem 'Latest',        0
+
+          headerItem 'Events',        800
+
+          headerItem 'Project Board', 1445
+
+          headerItem 'About',         2030
+
+          headerItem 'Location',      2831
+
+          headerItem 'Tools',         3471
+
 
       div
         style:
-          display: 'table'
-          'vertical-align': 'top'
-          'background-color': '#ffffff'
-          width: '100%'
+          display:         'table'
+          verticalAlign:   'top'
+          backgroundColor: '#ffffff'
+          width:           '100%'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'Hours'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'Sun & Mon : Closed'
+        subHeaderItem 'Hours'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'Tues - Fri : 12pm to 8pm'
+        subHeaderItem 'Sun & Mon : Closed'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'Sat : 10am to 8pm'
+        subHeaderItem 'Tues - Fri : 12pm to 8pm'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'Contact'
+        subHeaderItem 'Sat : 10am to 8pm'
 
-        p
-          className: 'hours'
-          style:
-            'margin-left': '2em'
-            display: 'inline-block'
-          'chandler@lmlabs.com'
+        subHeaderItem 'Contact'
+
+        subHeaderItem 'chandler@lmlabs.com'
+
 
 
 module.exports = Header

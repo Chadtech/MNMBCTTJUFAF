@@ -15,6 +15,7 @@
   src: url("Ubuntu-Regular.ttf");
 }
 body {
+  transition: all 0.25s;
   background: #fff;
   color: #59595b;
 }
@@ -55,7 +56,7 @@ body {
   padding: 1em;
 }
 .row.header {
-  min-height: 127px;
+  min-height: 64px;
   height: auto;
   width: 100%;
   display: table;
@@ -108,13 +109,27 @@ body {
 }
 .point.header {
   font-family: headerContent;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #fff;
   line-height: 120%;
 }
 .point.header:hover {
   font-family: headerContent;
-  font-size: 2em;
+  font-size: 1.5em;
+  color: #59595b;
+  line-height: 120%;
+}
+.toolCategory {
+  transition: all 0.25s;
+  font-family: bodyContent;
+  font-size: 1.5em;
+  color: #bdd530;
+  line-height: 120%;
+}
+.tool {
+  transition: all 0.25s;
+  font-family: bodyContent;
+  font-size: 1.5em;
   color: #59595b;
   line-height: 120%;
 }
@@ -125,16 +140,14 @@ body {
   line-height: 120%;
 }
 .caption {
+  transition: all 0.25s;
   font-family: headerContent;
-  font-size: 2em;
-  color: #bdd530;
+  font-size: 1.25em;
+  color: #000;
   line-height: 120%;
 }
-.caption:hover {
-  font-family: headerContent;
-  font-size: 2em;
-  color: LMWhite;
-  line-height: 120%;
+.captionBox {
+  transition: all 0.5s;
 }
 .events {
   font-family: headerContent;
@@ -145,7 +158,7 @@ body {
 .about {
   font-family: headerContent;
   font-size: 2em;
-  color: #bdd530;
+  color: #000;
   line-height: 120%;
 }
 .input {

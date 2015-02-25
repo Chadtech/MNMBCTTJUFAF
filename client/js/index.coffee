@@ -5,12 +5,13 @@ $      = require 'jquery'
 
 # Sections
 Header        = require './header.coffee'
+FauxHeader    = require './fauxHeader.coffee'
 Latest        = require './latest.coffee'
 Calendar      = require './calendar.coffee'
 ProjectBoard  = require './ProjectBoard.coffee'
 About         = require './about.coffee'
 Location      = require './location.coffee'
-
+Tools         = require './tools.coffee'
 
 
 
@@ -28,9 +29,7 @@ IndexClass = React.createClass
 
       Header()
 
-      div
-        style:
-          height: '132px'
+      FauxHeader()
 
       Latest()
 
@@ -41,6 +40,8 @@ IndexClass = React.createClass
       About()
 
       Location()
+
+      Tools()
 
 
 IndexPage = React.createFactory IndexClass
