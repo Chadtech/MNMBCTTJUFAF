@@ -92,7 +92,7 @@ Header = React.createClass
 
         subHeaderItem 'Tues - Fri : 12pm to 8pm'
 
-        subHeaderItem 'Sat : 10am to 8pm'
+        subHeaderItem 'Sat : 10am to 4pm'
 
         subHeaderItem 'Contact'
 
