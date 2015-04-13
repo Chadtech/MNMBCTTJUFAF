@@ -13,7 +13,7 @@ ProjectBoard = React.createClass
 
 
   boardClick: ->
-    @setState pointerEvents: 'none'
+    window.location.assign 'http://www.phxtech.us'
 
 
   render: ->
