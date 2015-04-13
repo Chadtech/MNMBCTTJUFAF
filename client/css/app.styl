@@ -25,6 +25,10 @@ specifyFont(inputColor, inputFont, inputSize)
   line-height 120%
   
 inputBasics()
+  width 185px
+  height 2em
+  margin-bottom 0.5em
+  width 185px
   border none
   outline none
   
@@ -34,8 +38,8 @@ body
   color LMDarkGray
 
 .content
-  width 100%
-  height 100%
+  //width 100%
+  //height 100%
   transition all 1s
   
 .container
@@ -105,7 +109,7 @@ body
   height 0em
 
 .break
-  height 1em
+  height 2em
     
 .point
   transition all 0.25s
@@ -113,9 +117,10 @@ body
   &.hilight
     specifyFont(LMHiLight, bodyContent, 1em)
   &.header
-    specifyFont(LMwhite, headerContent, 1.5em)
+    specifyFont(LMLightGray, headerContent, 1em)
     &:hover
-      specifyFont(LMDarkGray, headerContent, 1.5em)
+      specifyFont(LMwhite, headerContent, 1em)
+  
       
 .toolCategory
   transition all 0.25s
@@ -127,6 +132,8 @@ body
 
 .hours
   specifyFont(LMBlack, bodyContent, 1.25em)
+  &.title
+    specifyFont(LMHiLight, bodyContent, 1.25em)
   
 .caption
   transition all 0.25s
@@ -143,56 +150,44 @@ body
 
 .input
   transition all 0.5s
-  height 2em
-  margin-right 1em
   padding-left 1em
-  padding-right 0em
-  width 185px
-  specifyFont(LMLightGray, bodyContent, 1em)
-  background rgba(64, 64, 64, 1)
+  specifyFont(LMBlack, bodyContent, 1em)
+  background LMLightGray
   inputBasics()
-  &.special
-    background rgba(64, 58, 32, 1)
-  &.verySpecial
-    background rgba(48, 42, 20, 1)
-  &.quarter
-    width 44px
-  &.half
-    width 88px
-  &.threeQuarters
-    width 137px
-  &.oneAndHalf
-    width 282px
-  &.double
-    width 379px
-  &.problem
-    background #f23d21
-    color rgba(0, 0, 0, 1)
-  &.success
-    background #0aca1a
-    color rgba(0, 0, 0, 1)
-  &.hidden
+  &.full
+    width 90%
+  &.file
+    background none
     padding 0em
-    margin-bottom 0em
-    color rgba(0, 0, 0, 1)
-    background rgba(0, 0, 0, 1)
-    
+  &.area
+    width 90%
+    height 6em
+    padding 1em
+  &.listItem
+    width  370px  
+
 .submit
   transition all 0.25s
-  width 185px
-  padding-left 0em
-  padding-right 0em
-  specifyFont( LMBlack, bodyContent, 1em)
-  background #c8c4bc
+  specifyFont( LMHiLight, bodyContent, 1em)
+  background LMDarkGray
   text-decoration none
-  &.quarter
-    width 38px
-  &.half
-    width 88px
+  inputBasics()v
       
-  &:hover
-    color rgba(0, 0, 0, 1)
-    background #ccc4b8
+::-webkit-input-placeholder
+  color LMDarkGray
+    
+:-moz-placeholder
+  color LMDarkGray
+  opacity  1
+
+::-moz-placeholder
+  color LMDarkGray
+  opacity  1
+
+:-ms-input-placeholder
+  color LMDarkGray
+
+
     
 
 

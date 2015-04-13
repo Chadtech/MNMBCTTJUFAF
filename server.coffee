@@ -4,8 +4,6 @@ app         = express()
 http        = require 'http'
 {join}      = require 'path'
 bodyParser  = require 'body-parser'
-_           = require 'lodash'
-
 
 app.use bodyParser.json()
 

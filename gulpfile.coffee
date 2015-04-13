@@ -23,7 +23,7 @@ gulp.task 'server', (cb) ->
 
 gulp.task 'coffee', ->
   bCache = {}
-  b = browserify './client/js/index.coffee',
+  b = browserify './client/js/app.coffee',
     debug: true
     interestGlobals: false
     cache: bCache
