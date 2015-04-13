@@ -22,7 +22,7 @@ ProjectBoard = React.createClass
     div
       style:
         backgroundColor: '#c0c0c0'
-        width: '100%'
+        width:           '100%'
 
       div 
         style:

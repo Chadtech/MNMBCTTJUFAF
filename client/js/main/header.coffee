@@ -23,6 +23,7 @@ headerItem = (name, scrollPosition) ->
         position:       'relative'
         verticalAlign:  'top'
         marginTop:      '0.5em'
+        cursor:         'pointer'
 
       name
 
@@ -90,31 +91,13 @@ Header = React.createClass
 
           headerItem 'Events',        811
 
-          # headerItem 'Project Board', 1445
+          headerItem 'Message Board', 1451
 
-          headerItem 'About',         1445
+          headerItem 'About',         2182
 
-          headerItem 'Location',      2711
+          headerItem 'Location',      3413
 
-          headerItem 'Tools',         3351
-
-          # div
-          #   style:  
-          #     display:      'inline-block'
-          #     marginLeft:   '3em'
-          #     marginBottom: '1em'
-
-          #   p
-          #     className: 'point header'
-          #     onClick: -> 
-          #       window.location.assign 'https://docs.google.com/forms/d/1kcrMavYKw3IFfFRNyWArsZTADh6GKAkOe1HtajuPHFY/viewform'
-          #     style:
-          #       display:        'table'
-          #       position:       'relative'
-          #       verticalAlign:  'top'
-          #       marginTop:      '0.5em'
-
-          #     '\u25be ' + 'Sign up'
+          headerItem 'Tools',         4191
 
 
       div

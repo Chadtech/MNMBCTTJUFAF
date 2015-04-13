@@ -17,7 +17,7 @@ Location = React.createClass
 
 
   render: ->
-    div {},
+    div null,
 
       div
         style:
